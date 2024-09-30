@@ -1,0 +1,26 @@
+name: r-environment
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - r-base=4.2
+  - r-dplyr
+  - r-naniar
+  - r-plyr
+  - r-mgcv
+  - r-itsadug
+  - r-sjplot
+  - r-tidyverse
+  - r-devtools
+  - r-remotes
+  - r-irkernel  # Required to run R code in a Jupyter notebook
+  - pandoc
+  - notebook
+  - ipykernel
+  - wget   # To allow downloading files via bash scripts (optional)
+  
+  # Install any additional dependencies (such as system-level ones)
+  
+  # Optional: pip dependencies if you need any Python packages
+  # - pip:
+  #     - some-python-package
