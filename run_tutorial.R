@@ -23,7 +23,7 @@ library(itsadug)
 library(sjPlot)
 
 # Set working directory to the current directory
-setwd(getwd())
+setwd(".")
 
 # Ensure the dataset is downloaded
 dataset_path <- "dataset_tutorial.csv"
