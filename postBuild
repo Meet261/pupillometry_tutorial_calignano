@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# Download the dataset from OSF
+# Download the dataset from OSF if it doesn't exist
 wget -O dataset_tutorial.csv https://osf.io/6ke4y/download
 
 # Print message indicating completion of the setup
 echo "Dataset downloaded successfully!"
+
+# Run the wrapper script to set up the environment and run the tutorial
+Rscript run_tutorial.R
