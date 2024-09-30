@@ -1,5 +1,3 @@
-# run_tutorial.R
-
 # Clean the R environment
 rm(list = ls())
 
@@ -15,22 +13,21 @@ for (pkg in required_packages) {
 }
 
 # Load the required libraries
-library(plyr)   # Load plyr first
 library(dplyr)
 library(naniar)
+library(plyr)
 library(mgcv)
 library(itsadug)
 library(sjPlot)
 
-# Set working directory to the current directory (do not change to ~Downloads)
-# This is the crucial change
-setwd(".")
+# Set working directory - Update this to your actual working directory
+setwd("~Downloads")
 
-# Ensure the dataset is downloaded
+# Download the dataset from OSF if it's not available locally
 dataset_path <- "dataset_tutorial.csv"
 if (!file.exists(dataset_path)) {
   download.file("https://osf.io/6ke4y/download", destfile = dataset_path)
 }
 
-# Source the original tutorial file
-source("pupillometry_tutorial_calignano.R")
+# The environment is now ready to run the original code
+print("Environment setup complete. You can now run the original code.")
