@@ -21,7 +21,7 @@ library(itsadug)
 library(sjPlot)
 
 # Set working directory - Update this to your actual working directory
-setwd("~Downloads")
+#setwd("~Downloads")
 
 # Download the dataset from OSF if it's not available locally
 dataset_path <- "dataset_tutorial.csv"
