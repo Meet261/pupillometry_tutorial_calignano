@@ -5,8 +5,3 @@ wget -O dataset_tutorial.csv https://osf.io/6ke4y/download
 
 # Print message indicating completion of the setup
 echo "Dataset downloaded successfully!"
-chmod +x postBuild
-/
-├── original_script.R        # Your original R script
-├── environment.yml          # Environment setup file
-├── postBuild                # Bash script to download the dataset
