@@ -15,14 +15,15 @@ for (pkg in required_packages) {
 }
 
 # Load the required libraries
+library(plyr)   # Load plyr first
 library(dplyr)
 library(naniar)
-library(plyr)
 library(mgcv)
 library(itsadug)
 library(sjPlot)
 
-# Set working directory to the current directory
+# Set working directory to the current directory (do not change to ~Downloads)
+# This is the crucial change
 setwd(".")
 
 # Ensure the dataset is downloaded
